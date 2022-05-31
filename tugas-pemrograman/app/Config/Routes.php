@@ -39,6 +39,11 @@ $routes->post('/level', 'Level::index');
 $routes->post('/level/add', 'Level::add');
 $routes->get('/barang/nambah', 'Barang::tambah');
 $routes->post('/barang/add', 'Barang::add');
+$routes->get('/login', 'Login::index');
+$routes->post('/login', 'Login::auth');
+$routes->post('/login', 'Login::logout');
+$routes->post('/register', 'Register::index');
+$routes->post('/register', 'Register::save');
 
 /*
  * --------------------------------------------------------------------
